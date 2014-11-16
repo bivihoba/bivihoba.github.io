@@ -1,0 +1,29 @@
+---
+layout: document
+---
+<header role="banner">
+  <p>
+    <a href="/about/">About</a>
+  </p>
+  <h1>Bivihoba's homepage</h1>
+</header>
+<section>
+  <h2>Notes</h2>
+<dl>
+  {% for post in site.posts %}
+    <dt>
+      <time>{{ post.date | date: "%d %B, %Y" }}</time>
+    </dt>
+    <dd>
+      <h2>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </h2>
+      <p>
+
+      </p>
+    </dd>
+  {% endfor %}
+</dl>
+</section>
+
+{% include footer.html %}
