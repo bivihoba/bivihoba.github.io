@@ -12,7 +12,7 @@ layout: document
 <dl>
   {% for post in site.posts %}
     <dt>
-      <time>{{ post.date | date: "%d %B, %Y" }}</time>
+      <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%d %B, %Y" }}</time>
     </dt>
     <dd>
       <h2>
