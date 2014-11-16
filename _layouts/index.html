@@ -7,7 +7,7 @@ layout: document
   </p>
   <h1>Bivihoba's homepage</h1>
 </header>
-<section>
+<main role="main">
   <h2>Notes</h2>
 <dl>
   {% for post in site.posts %}
@@ -18,12 +18,8 @@ layout: document
       <h2>
         <a href="{{ post.url }}">{{ post.title }}</a>
       </h2>
-      <p>
-
-      </p>
     </dd>
   {% endfor %}
 </dl>
-</section>
-
+</main>
 {% include footer.html %}
