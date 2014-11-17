@@ -2,6 +2,7 @@
 layout: post
 title: Shadows with CSS gradients
 tags: [CSS, shadows, linear gradients]
+redirect_from: "/post/2012/10/658/"
 ---
 
 **Дисклеймер**: возможно это все уже давно известно и я в очередной раз изобрел велосипед, и может быть не самый лучший, но зато сколько удовольствия мне это доставило)
