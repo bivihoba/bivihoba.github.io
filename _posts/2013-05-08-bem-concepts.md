@@ -2,6 +2,7 @@
 layout: post
 title: Базовые понятия и принципы БЭМ
 tags: [BEM, BEM method]
+redirect_from: "/post/2013/05/662/"
 ---
 
 Сухой остаток моего <a href="/slides/bem/">доклада</a>, вольная трактовка теоретической части БЭМ-методологии. Если вы ничего не знаете про БЭМ, то лучше начать с <a href="http://ru.bem.info/method/">bem.info</a>.

@@ -2,6 +2,7 @@
 layout: post
 title: About semantic differences in markup
 tags: [bem, html, css, robots]
+redirect_from: "/post/2011/03/653/"
 ---
 
 Сделал неожиданный для себя вывод: для разработчика, реализующего БЭМ, семантика классов и семантика элементов являются конкурирующими.
