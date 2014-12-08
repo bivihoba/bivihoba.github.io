@@ -1,0 +1,811 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+	<title>Shower Presentation Engine</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=792, user-scalable=no">
+	<link rel="stylesheet" href="shower/themes/softline/styles/screen.css">
+	<link rel="stylesheet" href="shower/themes/softline/styles/vasya.css">
+
+</head>
+<body class="list">
+	<header class="caption">
+		<h1>БЭМ</h1>
+		<p>Василий Чернов, <a href="http://softline.ru">Softline</a></p>
+	</header>
+
+
+    <section class="b-slide slide shout">
+        <div class="b-slide__in">
+            <h2><img src="pictures/bem-sign.png" alt="BEM Logo"></h2>
+        </div>
+    </section>
+
+    <section class="b-slide slide shout"><div class="b-slide__in">
+        <h2>БЭМ</h2>
+
+    </div></section>
+
+    <!--<section class="b-slide slide"><div class="b-slide__in">-->
+    <!--&lt;!&ndash;<section class="b-slide slide cover"><div class="b-slide__in">&ndash;&gt;-->
+        <!--<h2>Уровни БЭМ</h2>-->
+        <!--&lt;!&ndash;<div class="b-intro"><em>История болезни</em></div>&ndash;&gt;-->
+
+        <!--<ul>-->
+            <!--<li class="next">Принципы, терминология, идеология</li>-->
+            <!--<li class="next">Нотация, организация файловой системы, внутренние соглашения</li>-->
+            <!--<li class="next">Инструменты (компиляторы, утилиты, оптимизаторы, плагины)</li>-->
+            <!--<li class="next">Библиотека блоков</li>-->
+            <!--<li class="next">Методология</li>-->
+            <!--<li class="next">Поставленный процесс</li>-->
+        <!--</ul>-->
+
+        <!--&lt;!&ndash;&lt;!&ndash;<em>Здесь должна была быть фотография Виталия Харисова, но в связи с законом богохульстве я подумал и решил, что лучше не надо.</em>&ndash;&gt;&ndash;&gt;-->
+        <!--&lt;!&ndash;&lt;!&ndash;<img src="pictures/brain.jpg" alt="" width="100%">&ndash;&gt;&ndash;&gt;-->
+    <!--</div></section>-->
+    <!--<section class="b-slide slide"><div class="b-slide__in">-->
+        <!--<h2>Мир БЭМ. Теория</h2>-->
+
+        <!--<p>Идеология, терминология, принципы и рекомендации.</p>-->
+
+
+    <!--</div></section>-->
+    <!--<section class="b-slide slide"><div class="b-slide__in">-->
+        <!--<h2>Мир БЭМ. Соглашения</h2>-->
+
+        <!--<p>Нотация, организация файловой системы, внутренние соглашения.</p>-->
+
+    <!--</div></section>-->
+    <!--<section class="b-slide slide cover"><div class="b-slide__in">-->
+
+            <!--<h2 class="b-slide__title b-billet b-billet_viewtype_underlayer">Мир БЭМ. Инструменты</h2>-->
+
+        <!--<p class="b-billet b-billet_viewtype_underlayer">Препроцессоры, компиляторы, утилиты, оптимизаторы, плагины к ИДЕ. - Всё, что может упростить работу по БЭМ-методологии.</p>-->
+
+
+        <!--<img src="pictures/house__bem-tools.png" alt="" width="100%">-->
+
+    <!--</div></section>-->
+
+    <!--&lt;!&ndash;<section class="b-slide slide"><div class="b-slide__in">&ndash;&gt;-->
+        <!--&lt;!&ndash;<h2>Мир БЭМ. Методология</h2>&ndash;&gt;-->
+
+        <!--&lt;!&ndash;<p>Теория + соглашения + инструменты + библиотека</p>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;</div></section>&ndash;&gt;-->
+
+    <!--<section class="b-slide slide"><div class="b-slide__in">-->
+        <!--<h2>Мир БЭМ. Workflow</h2>-->
+
+        <!--<p>Реализация БЭМ-методологии на уровне всего процесса разработки (дизайн, верстка, разработка)</p>-->
+
+    <!--</div></section>-->
+
+    <!--<section class="b-slide slide"><div class="b-slide__in">-->
+        <!--<h2>Все фазы</h2>-->
+
+        <!--<ol>-->
+            <!--<li>Теория</li>-->
+            <!--<li>Cоглашения</li>-->
+            <!--<li>Инструменты</li>-->
+            <!--<li>Библиотека</li>-->
+            <!--<li>Методология</li>-->
+            <!--<li>Воркфлоу</li>-->
+        <!--</ol>-->
+
+    <!--</div></section>-->
+
+	<section class="b-slide slide shout"><div class="b-slide__in">
+		<h2>I</h2>
+	</div></section>
+
+	<section class="b-slide slide"><div class="b-slide__in">
+		<h2><span class="b-newline">Теория БЭМ.</span> Основные понятия и принципы</h2>
+
+        <a href="http://ru.bem.info/" target="_blank">http://ru.bem.info/</a>
+
+	</div></section>
+
+    <section class="b-slide slide cover"><div class="b-slide__in">
+        <h2 class="b-slide__title b-billet b-billet_viewtype_underlayer">Це блок</h2>
+        <img src="pictures/lard21__block.jpg" alt="" class="b-image b-image_content_bem-block">
+    </div></section>
+
+    <section class="b-slide slide"><div class="b-slide__in">
+        <h2>Простой блок</h2>
+        <img src="pictures/barbell.jpg" alt="" class="b-image b-image_content_simple-bem-block">
+    </div></section>
+
+    <section class="b-slide b-slide_content_complex-block slide "><div class="b-slide__in">
+            <h2 class="b-slide__title">Составной блок</h2>
+            <!--<p class="b-intro b-intro_content_complex-bem-block">из элементов</p>-->
+        <img src="pictures/bowflex.jpg" alt="" class="b-image b-image_content_complex-bem-block">
+    </div></section>
+
+    <section class="b-slide b-slide_content_required-element slide cover"><div class="b-slide__in">
+        <h2 class="b-slide__title b-billet b-billet_viewtype_underlayer">Элемент</h2>
+            <!--<h2 class="b-slide__title">Составной блок</h2>-->
+        <!--<img src="pictures/missing-puzzle1.jpg" alt="" class="b-imag">-->
+        <img src="pictures/Missing-Puzzle-Piece-1800x2880.jpg" alt="" class="b-image">
+    </div></section>
+    <section class="b-slide b-slide_content_required-element slide cover"><div class="b-slide__in">
+            <!--<h2 class="b-slide__title">Составной блок</h2>-->
+        <!--<img src="pictures/missing-puzzle1.jpg" alt="" class="b-imag">-->
+        <img src="pictures/cat-puzzle.jpg" alt="" class="b-image">
+		<div class="note b-billet b-billet_viewtype_underlayer b-billet_content_cats-remark">☑ вставить котиков в презентацию</div>
+    </div></section>
+
+    <section class="b-slide slide"><div class="b-slide__in">
+        <h2 class="b-slide__title">Модификатор</h2>
+        <!--<img src="pictures/warhol__modificators.jpg" alt="" width="100%">-->
+        <p class="b-intro b-intro_content_bem-mode"><em>(
+            модификатор, модификация, мода
+            )</em>
+        </p>
+        <p class="b-box b-box_viewtype_justify b-box_content_bem-modes">
+            <img src="pictures/pichu.png" alt="" class="b-image b-image_content_bem-mode">
+            <img src="pictures/picachu.png" alt="" class="b-image b-image_content_bem-mode">
+            <!--<img src="pictures/raichu.png" alt="" class="b-image b-image_content_bem-mode">-->
+            <img src="pictures/026.png" alt="" class="b-image b-image_content_bem-mode">
+        </p>
+
+    </div></section>
+    <section class="b-slide slide"><div class="b-slide__in">
+        <h2 class="b-slide__title">Значение модификатора</h2>
+        <!--<img src="pictures/warhol__modificators.jpg" alt="" width="100%">-->
+          <br />
+        <p><img src="pictures/warhol-campbells.png" alt=""></p>
+    </div></section>
+
+
+    <section class="b-slide slide"><div class="b-slide__in">
+		<h2 class="b-slide__title">БЭМ головного мозга</h2>
+        <img src="pictures/katamari.jpg" alt="" height="80%" class="b-image b-image_content_bem-brain">
+    </div></section>
+
+    <section class="b-slide slide shout"><div class="b-slide__in">
+        <h2>II</h2>
+    </div></section>
+
+    <section class="b-slide slide"><div class="b-slide__in">
+        <h2>Синтаксис. Общие правила</h2>
+
+        <ul>
+            <li>English</li>
+            <li>Бз скрщнй</li>
+            <li>строчный регистр</li>
+            <li>Дефис-в-качестве-пробела</li>
+        </ul>
+
+    </div></section>
+
+    <section class="b-slide slide"><div class="b-slide__in">
+        <h2>Синтаксис. Блок</h2>
+
+        <p><code class="b-code_type_notation">имя-блока</code></p>
+
+        <p><code class="b-code">column</code><br/>
+            <code class="b-code">page-title</code><br/>
+            <code class="b-code">form-fields-list</code></p>
+        <pre>
+            <code class="b-code">&lt;div class="<mark class="b-highlight">column</mark>"&gt;Колонка&lt;/div&gt;</code>
+            <code class="b-code">&lt;h1 class="<mark class="b-highlight">page-title</mark>"&gt;Заголовок страницы&lt;/h1&gt;</code>
+        </pre>
+    </div></section>
+
+    <section class="b-slide slide"><div class="b-slide__in">
+        <h2>Синтаксис. Элемент</h2>
+
+        <p>
+            <code class="b-code_type_notation">имя-блока__имя-элемента</code><br />
+
+        <code class="b-code">product__summary</code></p>
+        <pre>
+            <code class="b-code">&lt;div class="<mark class="b-highlight">product</mark>"&gt;</code>
+                <code class="b-code">   &lt;div class="<mark class="b-highlight">product__summary</mark>"&gt;</code>
+                    <code class="b-code">       Краткое описание продукта</code>
+                    <code class="b-code">   &lt;/div&gt;</code>
+            <code class="b-code">&lt;/div&gt;</code>
+        </pre>
+
+
+    </div></section>
+
+    <section class="b-slide slide"><div class="b-slide__in">
+        <p>Неправильно:</p>
+
+        <pre>
+            <code class="b-code">&lt;div class="<mark class="b-highlight">product</mark>"&gt;</code>
+            <code class="b-code">   &lt;div class="<mark class="b-highlight">product__summary</mark>"&gt;</code>
+            <code class="b-code">      &lt;div class="<mark class="b-highlight">product__summary__price</mark>"&gt;</code>
+            <code class="b-code">           2.99 $</code>
+            <code class="b-code">      &lt;/div&gt;</code>
+            <code class="b-code">   &lt;/div&gt;</code>
+            <code class="b-code">&lt;/div&gt;</code>
+        </pre>
+
+    </div></section>
+
+    <section class="b-slide slide"><div class="b-slide__in">
+        <p>Правильно:</p>
+
+        <pre>
+            <code class="b-code">&lt;div class="<mark class="b-highlight">product</mark>"&gt;</code>
+            <code class="b-code">   &lt;div class="<mark class="b-highlight">product__summary</mark>"&gt;</code>
+            <code class="b-code">      &lt;div class="<mark class="b-highlight">product__price</mark>"&gt;</code>
+            <code class="b-code">           2.99 $</code>
+            <code class="b-code">      &lt;/div&gt;</code>
+            <code class="b-code">   &lt;/div&gt;</code>
+            <code class="b-code">&lt;/div&gt;</code>
+        </pre>
+
+    </div></section>
+
+    <section class="b-slide slide"><div class="b-slide__in">
+        <h2>Синтаксис. Модификатор</h2>
+
+            <p>для блока:<br/>
+                <code class="b-code_type_notation">блок_модификатор_значение-модификатора</code><br />
+                <code class="b-code">link_type_pseudo</code>
+            </p>
+
+        <pre>
+            <code class="b-code">&lt;a href="/" class="<mark class="b-highlight">link</mark>"&gt;Простая ссылка&lt;/a&gt;</code>
+            <code class="b-code">&lt;span class="<mark class="b-highlight">link</mark> <mark class="b-highlight">link_type_pseudo</mark>"&gt;Псевдоссылка&lt;/span&gt;</code>
+            <!--<code class="b-code">&lt;span class="<mark class="b-highlight">link</mark> <mark class="b-highlight">link_type_pseudo</mark>"&gt;Псевдоссылка&lt;/span&gt;</code>-->
+        </pre>
+
+    </div></section>
+
+    <section class="b-slide slide"><div class="b-slide__in">
+        <!--<h2>Синтаксис. Модификатор</h2>-->
+
+        <p>для элемента: <br/>
+            <code class="b-code_type_notation">блок__элемент_модификатор_значение-модификатора</code><br />
+            <code class="b-code">menu__item_state_selected</code>
+        </p>
+
+
+        <pre>
+            <code class="b-code">&lt;div class="<mark class="b-highlight">menu</mark>"&gt;</code>
+            <code class="b-code">   &lt;a href="about.html" class="<mark class="b-highlight">menu__item</mark>"&gt;О компании&lt;/a&gt;</code>
+            <code class="b-code">   &lt;span class="<mark class="b-highlight">menu__item</mark> <mark class="b-highlight">menu__item_state_selected</mark>"&gt;</code>
+            <code class="b-code">       Новости</code>
+            <code class="b-code">   &lt;/span&gt;</code>
+            <code class="b-code">&lt;/div&gt;</code>
+        </pre>
+
+
+
+    </div></section>
+
+
+
+    <section class="b-slide slide"><div class="b-slide__in">
+        <h2>Синтаксис. Префикс</h2>
+
+        <p>Обязательный префикс*</p>     <br />
+        <p><code class="b-code b-code_content_prefix">b-</code></p>
+        <br /> <br />
+        <p class="note">* на самом деле нет</p>
+
+    </div></section>
+
+	<section class="b-slide slide cover"><div class="b-slide__in">
+		<!--<h2>Нотация. Префикс b-.</h2>-->
+
+        <h2 class="b-slide__title b-billet b-billet_viewtype_underlayer">Во-первых, это красиво ...</h2>
+        <img src="pictures/CTO__b-table.jpg" alt="" width="100%">
+        <cite class="b-slavas-wat">wat</cite>
+
+            <div class="b-slavas-beauty"><code class="b-code b-slavas-beauty__text">&lt;table class="b-table"&gt;</code></div>
+
+            <!--<code>...</code>-->
+            <!--<code>&lt;/table&gt;</code>-->
+
+	</div></section>
+
+    <section class="b-slide slide"><div class="b-slide__in">
+        <h2>Синтаксис. Префикс</h2>
+
+        <p>Обязательный префикс</p>
+        <br />
+        <p><code class="b-code b-code_content_prefix">b-</code></p>
+        <br />
+        <ul>
+            <li>Пространство имен</li>
+            <li>Устоявшаяся нотация</li>
+        </ul>
+
+    </div></section>
+
+
+	<section class="b-slide slide"><div class="b-slide__in">
+		<h2>Синтаксис. Итого</h2>
+
+
+        <pre>
+            <code class="b-code">&lt;ul class="<mark class="b-code__highlight">b-list</mark> <mark class="b-code__highlight">b-list_type_simple</mark>"&gt;</code>
+            <code class="b-code">   &lt;li class="<mark class="b-code__highlight">b-list__item</mark>"&gt;Блок&lt;/li&gt;</code>
+            <code class="b-code">   &lt;li class="<mark class="b-code__highlight">b-list__item</mark>"&gt;Элемент&lt;/li&gt;</code>
+            <code class="b-code">   &lt;li class="<mark class="b-code__highlight">b-list__item</mark>"&gt;Модификатор&lt;/li&gt;</code>
+            <code class="b-code">   &lt;li class="<mark class="b-code__highlight">b-list__item</mark> <mark class="b-code__highlight">b-list__item_content_blank</mark>"&gt;&lt;/li&gt;</code>
+            <code class="b-code">   &lt;li class="<mark class="b-code__highlight">b-list__item</mark>"&gt;PROFIT&lt;/li&gt;</code>
+            <code class="b-code">&lt;/ul&gt;</code>
+        </pre>
+
+
+
+	</div></section>
+
+
+
+
+
+
+    <section class="b-slide slide"><div class="b-slide__in">
+        <h2>БЭМ-дерево</h2>
+        <p>— это как DOM-дерево, только БЭМ.
+        <br />Json, XML, YAML, ...</p>
+
+        <div class="b-content-columns b-content-columns_layout_a-b b-content-columns_viewtype_code-diff">
+            <div class="b-content-column b-content-column_layout_a">
+                <pre>
+                    <code class="b-code">&lt;b:list&gt;</code>
+                    <code class="b-code">   &lt;e:item&gt;Б<!--лок-->&lt;/e:item&gt;</code>
+                    <code class="b-code">   &lt;e:item&gt;Э<!--лемент-->&lt;/e:item&gt;</code>
+                    <code class="b-code">   &lt;e:item&gt;М<!--одификатор-->&lt;/e:item&gt;</code>
+                    <code class="b-code">&lt;/b:list&gt;</code>
+                </pre>
+            </div>
+            <div class="b-content-column b-content-column_layout_b">
+                <pre>
+                    <code class="b-code">&lt;ul class="<mark class="b-code__highlight">b-list</mark>"&gt;</code>
+                    <code class="b-code">   &lt;li class="<mark class="b-code__highlight">b-list__item</mark>"&gt;Б<!--лок-->&lt;/li&gt;</code>
+                    <code class="b-code">   &lt;li class="<mark class="b-code__highlight">b-list__item</mark>"&gt;Э<!--лемент-->&lt;/li&gt;</code>
+                    <code class="b-code">   &lt;li class="<mark class="b-code__highlight">b-list__item</mark>"&gt;М<!--одификатор-->&lt;/li&gt;</code>
+                    <code class="b-code">&lt;/ul&gt;</code>
+                </pre>
+            </div>
+        </div>
+        <!--<p>структурная композиция БЭМ-сущностей, которая будет отражена в DOM-дерево.</p>-->
+    </div></section>
+
+    <section class="b-slide slide"><div class="b-slide__in">
+                <pre>
+                    <code class="b-code">&lt;b:page&gt;</code>
+                    <code class="b-code">   &lt;b:header&gt;</code>
+                    <code class="b-code">       &lt;b:logo&gt;</code>
+                    <code class="b-code">           &lt;e:image x:src="logo.png"/&gt;</code>
+                    <code class="b-code">       &lt;/b:logo&gt;</code>
+                    <code class="b-code">       &lt;b:tagline&gt;BEM Them All!&lt;/b:tagline&gt;</code>
+                    <code class="b-code">   &lt;/b:header&gt;</code>
+                    <code class="b-code">   ...</code>
+                    <code class="b-code">&lt;b:page&gt;</code>
+                </pre>
+    </div></section>
+
+    <!--<section class="b-slide slide"><div class="b-slide__in">-->
+
+        <!--<img src="pictures/sryb5.jpg" alt="">-->
+
+
+    <section class="b-slide slide shout"><div class="b-slide__in">
+        <h2>III</h2>
+    </div></section>
+
+    <section class="b-slide slide"><div class="b-slide__in">
+        <h2>АНБ в БЭМ</h2>
+        <h3><em>АНБ — абсолютно независимый блок</em></h3>
+        <br/>
+        <ul>
+            <li>использование исключительно классов<br /><span class="note">(отказ от выбора узлов по ID и по тегу)</span></li>
+            <li>отказ от каскадных селекторов</li>
+            <li>нотация классов</li>
+        </ul>
+    </div></section>
+
+    <!--<section class="b-slide slide shout"><div class="b-slide__in">-->
+
+        <!--<img src="pictures/santassackcol.jpg" alt="" height="100%"/>-->
+    <!--</div></section>-->
+
+    <!--<section class="b-slide slide shout"><div class="b-slide__in">-->
+        <!--&lt;!&ndash;<h2><img src="pictures/AC101073l.jpg" alt=""/></h2>&ndash;&gt;-->
+        <!--<img src="pictures/784319p.jpg" alt="">-->
+
+    <!--</div></section>-->
+    <!--<section class="b-slide slide"><div class="b-slide__in">-->
+        <!--<h2><img src="pictures/AC101073l.jpg" alt=""/></h2>-->
+        <!--&lt;!&ndash;<img src="pictures/8459680378_e9397667f9_h.jpg" alt="">&ndash;&gt;-->
+
+    <!--</div></section>-->
+
+    <!--</div></section>-->
+    <section class="b-slide slide cover"><div class="b-slide__in">
+        <!--<h2 class="b-slide__title b-billet b-billet_viewtype_underlayer">Из блоков можно собрать всё</h2>-->
+
+        <!--<img src="pictures/lego.jpg" alt="">-->
+        <!--<img src="pictures/job_0186.jpg" alt="" width="100%">-->
+        <img src="pictures/LH2.jpg" alt="" width="100%">
+
+
+    </div></section>
+
+
+    <section class="b-slide slide">
+        <div class="b-slide__in">
+        <h2>Связи между БЭМ-сущностями</h2>
+
+        <ol class="b-list">
+            <li class="b-list__item"><mark class="b-highlight b-highlight_type_neutral">Блок и элементы блока</mark></li>
+            <li class="b-list__item"><mark class="b-highlight b-highlight_type_good">Элементы блока между собой</mark></li>
+            <li class="b-list__item"><mark class="b-highlight b-highlight_type_possible">Модификация блока и элементы блока</mark></li>
+            <li class="b-list__item"><mark class="b-highlight b-highlight_type_bad">Блоки, элементы, модификации из разных&nbsp;блоков</mark></li>
+        </ol>
+        <!--<ol class="b-list">-->
+            <!--<li class="b-list__item"><mark class="b-highlight b-highlight_type_neutral">Блок и элементы блока</mark></li>-->
+            <!--<li class="b-list__item"><mark class="b-highlight b-highlight_type_good">Элементы блока между собой</mark></li>-->
+            <!--<li class="b-list__item"><mark class="b-highlight b-highlight_type_possible">Модификация блока и элементы блока</mark></li>-->
+            <!--<li class="b-list__item"><mark class="b-highlight b-highlight_type_bad">Блоки, элементы, модификации из разных&nbsp;блоков</mark></li>-->
+        <!--</ol>-->
+
+    </div></section>
+
+    <section class="b-slide slide">
+        <div class="b-slide__in">
+        <!--<h2>Связи между БЭМ-сущностями.</h2>-->
+        <h2>Связь. Блок + элементы блока</h2>
+
+            <p></p>
+            <pre>
+                <code class="b-code"><mark class="b-code__highlight">.b-region</mark> <mark class="b-code__highlight">.b-region</mark>__title {</code>
+                <code class="b-code">    margin-right: 20px;                  </code>
+                <code class="b-code">}</code>
+            </pre>
+            <p>Бессмысленая, так как связь заложена на уровне синтаксиса</p>
+
+
+        </div></section><section class="b-slide slide">
+        <div class="b-slide__in">
+        <!--<h2>Связи между БЭМ-сущностями.</h2>-->
+        <h2>Связь. Элемент блока + элемент блока</h2>
+            <pre>
+                <!--<code class="b-code">&lt;dl class="b-table"&gt;</code>-->
+                <code class="b-code">&lt;tr class="b-table__row"&gt;...&lt;/tr&gt;</code>
+                <code class="b-code">&lt;tr class="b-table__row b-table__row<mark class="b-highlight">_type_even</mark>"&gt;...&lt;/tr&gt;</code>
+                <!--<code class="b-code">&lt;/dl&gt;</code>-->
+            </pre>
+            <pre>
+                <!--<code class="b-code">&lt;dl class="b-table"&gt;</code>-->
+                <code class="b-code">.b-table__row {}</code>
+                <code class="b-code">.b-table__row:<mark class="b-highlight">nth-child(even)</mark> {}</code>
+                <!--<code class="b-code">&lt;/dl&gt;</code>-->
+            </pre>
+            <p>гипотетически хорошая, но встречается редко</p>
+        </div></section>
+
+    <section class="b-slide slide">
+        <div class="b-slide__in">
+        <!--<h2>Связи между БЭМ-сущностями.</h2>-->
+        <h2>Связь. Модификация + элемент блока</h2>
+            <pre>
+                <code class="b-code">.b-list_type_simple .b-list__item {}</code>
+            </pre>
+            <pre>
+                <code class="b-code">&lt;ul class="b-list b-list_type_simple"&gt;</code>
+                <code class="b-code">  &lt;li class="<mark class="b-code__highlight">b-list__item</mark>"&gt;</code>
+                <code class="b-code">      &lt;ol class="b-list b-list_type_numeric"&gt;</code>
+                <code class="b-code">          &lt;li class="<mark class="b-code__highlight">b-list__item</mark>"&gt;</code>
+            </pre>
+            <p>приемлимая, но допускает неприятные эффекты</p>
+            <!--имеет ограниченный контекст,-->
+        </div></section>
+
+    <section class="b-slide slide">
+        <div class="b-slide__in">
+        <!--<h2>Связи между БЭМ-сущностями.</h2>-->
+        <h2>Связь. Сущности из разных блоков</h2>
+            <pre>
+                <code>.b-product .b-link {...} /*<mark class="b-code__highlight"><strong>«межблочный каскад»</strong></mark>*/</code>
+            </pre>
+            <p>неприемлимая, но ...</p>
+            <ol class="b-list">
+                <li class="b-list__item">по-разному:
+
+                <pre>
+                    <code class="b-code">       .b-article .b-link {}</code>
+                    <code class="b-code">       .b-pagination .b-link {}</code>
+                </pre>
+                </li>
+
+                <li class="b-list__item">миксы!</li>
+            </ol>
+        </div></section>
+
+    <section class="b-slide slide"><div class="b-slide__in">
+        <h2 class="b-slide__title">БЭМ-микс</h2>
+
+        <p>Микс — совмещение разных БЭМ-сущностей на узле DOM-дерева.</p>
+
+        <pre>
+
+            <code class="b-code">&lt;span class="b-logo"&gt;</code>
+            <code class="b-code">   &lt;img src="logo.png" class="b-logo__image" alt="logo"/&gt;</code>
+            <code class="b-code">&lt;/span&gt;</code>
+            <code class="b-code">&lt;a href="/" class="b-logo <mark class="b-code__highlight">b-link</mark>"&gt;</code>
+            <code class="b-code">   &lt;img src="logo.png" class="b-logo__image" alt="logo"/&gt;</code>
+            <code class="b-code">&lt;/a&gt;</code>
+        </pre>
+
+    </div></section>
+
+    <section class="b-slide slide"><div class="b-slide__in">
+        <h2>Достоинства миксов</h2>
+        <blockquote class="b-blockquote b-blockquote_content_mixes"><img src="pictures/mix-screen.png" alt="" class="b-image b-image_content_mixes-benefits"></blockquote>
+        <p>&copy; Кир Белевич, <a href="http://clubs.ya.ru/yasubbotnik/replies.xml?item_no=682"> «Миксы во вселенной БЭМ»</a></p>
+    </div></section>
+
+    <!--<section class="b-slide slide cover"><div class="b-slide__in">-->
+        <!--<h2 class="b-slide__title b-billet b-billet_viewtype_underlayer">Сочетания бывают разные</h2>-->
+
+        <!--&lt;!&ndash;<img src="pictures/lego.jpg" alt="">&ndash;&gt;-->
+        <!--<img src="pictures/coffee.jpg" alt="" height="100%">-->
+
+
+    <!--</div></section>-->
+
+    <section class="b-slide slide cover"><div class="b-slide__in">
+        <h2 class="b-slide__title b-billet ">Серая сторона миксов</h2>
+        <code class="b-code b-code_viewtype_despair">.b-pagination__item .b-link</code>
+        <!--class="b-code b-code_type_notation"-->
+        <ul>
+            <li class="next">незапланированные эффекты</li>
+            <li class="next">«узаконенный каскад»</li>
+            <li class="next">повышается риск нарушения правильной связности</li>
+            <li class="next">межблочные связи</li>
+        </ul>
+        <!--<ul class="b-list"><li class="b-list__item next"></li></ul>-->
+
+        <img src="pictures/cigi.jpg" alt=""/>
+        <!--<h3>В межблочных связях следует быть очень разборчивым</h3>-->
+
+    </div></section>
+
+    <section class="b-slide slide"><div class="b-slide__in">
+
+        <pre>
+
+            <code class="b-code">&lt;article class="<mark class="b-highlight">b-product</mark> <mark class="b-highlight">b-product_type_sale</mark>
+                <mark class="b-highlight">b-article</mark> <mark class="b-highlight">b-article_content_product</mark>"&gt;</code>
+            <code class="b-code">       &lt;header class="<mark class="b-highlight">b-article__header</mark>"/&gt;</code>
+
+            <code class="b-code">               &lt;h3 class="<mark class="b-highlight">b-product__title</mark>"/&gt;Title&lt;/h3&gt;</code>
+
+            <code class="b-code">       &lt;/header&gt;</code>
+            <code class="b-code">       &lt;div class="<mark class="b-highlight">b-product_description</mark> <mark class="b-highlight">b-article__content</mark>"&gt;</code>
+            <!--<code class="b-code">       ...</code>-->
+            <!--<code class="b-code">   &lt;/div&gt;</code>-->
+            <!--<code class="b-code">&lt;/article&gt;</code>-->
+        </pre>
+        <pre>
+            <code class="b-code">.b-product_type_sale .b-product__title {}</code>
+            <code class="b-code">.b-article_content_product .b-article__header {}</code>
+        </pre>
+
+    </div></section>
+
+    <section class="b-slide slide"><div class="b-slide__in">
+
+		<br/>
+		<br/>
+		<img src="pictures/cast coil.jpg" alt="" width="50%" class="b-image b-image_content_coil"/>
+
+    </div></section>
+
+	<section class="b-slide slide"><div class="b-slide__in">
+
+		<br/>
+		<br/>
+
+		<img src="pictures/cast_puzzle_coil.jpg" alt=""  width="50%" class="b-image b-image_content_coil"/>
+
+    </div></section>
+
+    <section class="b-slide slide"><div class="b-slide__in">
+        <h2>Микс != глобальный модификатор</h2>
+
+
+        <code class="b-code">.b-inline {display:inline;}</code><br />
+        <code class="b-code">&lt;h4 class="b-product__title b-inline"/&gt;</code>
+        <br/>
+        <br/>
+        <p>Глобальные модификаторы противоречат БЭМ-принципам.    <br />
+        Блок должен иметь ценность сам по себе.               </p>
+
+    </div></section>
+
+
+    <section class="b-slide slide shout"><div class="b-slide__in">
+        <h2>IV</h2>
+    </div></section>
+    <!--<section class="b-slide slide "><div class="b-slide__in">-->
+        <!--<h2>Библиотека блоков</h2>-->
+    <!--</div></section>-->
+
+
+	<section class="b-slide slide cover"><div class="b-slide__in">
+     <h2 class="b-slide__title b-billet b-billet_viewtype_underlayer b-billet_content_occam">Не умножай сущности</h2>
+     <img src="pictures/todd__entities.jpeg" alt="" width="100%">
+ </div></section>
+
+	<section class="b-slide slide"><div class="b-slide__in">
+     <h2>Блок vs. Модификация</h2>
+     <pre>
+     <code>.b-menu_type_main -> b-main-menu</code>
+     <code>.b-menu_type_main .b-menu__item -> b-main-menu__item</code>
+     </pre>
+ </div></section>
+
+    <section class="b-slide slide cover"><div class="b-slide__in">
+        <h2 class="b-slide__title b-billet b-billet_viewtype_underlayer">Библиотека блоков. Внутри</h2>
+        <img src="pictures/magorium__bem-chaos.jpg" alt="" width="100%">
+    </div></section>
+
+    <section class="b-slide slide cover"><div class="b-slide__in">
+        <h2 class="b-slide__title b-billet b-billet_viewtype_underlayer">Библиотека блоков. Снаружи</h2>
+        <img src="pictures/matrix-backdoor__bem-lib.jpeg" alt="" height="100%">
+    </div></section>
+
+	<section class="b-slide slide cover"><div class="b-slide__in">
+     <h2 class="b-slide__title b-billet b-billet_viewtype_underlayer">Уровни переопределения</h2>
+     <br />
+     <img src="pictures/P1010105.JPG" alt="">
+ </div></section>
+
+    <!--<section class="b-slide slide cover"><div class="b-slide__in">-->
+        <!--<h2 class="b-slide__title b-billet b-billet_viewtype_underlayer">Работа с библиотекой блоков</h2>-->
+        <!--<img src="pictures/sokoban-ex__play-with-blocks.png" alt="" height="100%">-->
+    <!--</div></section>-->
+
+    <!--<section class="b-slide slide cover"><div class="b-slide__in">-->
+        <!--&lt;!&ndash;<h2 class="b-slide__title b-billet b-billet_viewtype_underlayer">Легко потерять</h2>&ndash;&gt;-->
+        <!--<h2 class="b-slide__title b-billet b-billet_viewtype_underlayer">Где же этот ящик...</h2>-->
+        <!--<img src="pictures/sobotka__lost-blocks.jpg" alt="" width="120%">-->
+        <!--<h3></h3>-->
+    <!--</div></section>-->
+
+    <!--<section class="b-slide slide"><div class="b-slide__in">-->
+        <!--<h2>Меньше блоков</h2>-->
+
+        <!--<p>Вместо:<br />-->
+
+            <!--<code class="b-code">  b-span1 b-span2 b-span3   </code>   <br />-->
+            <!--один с модификаторами                          <br />-->
+            <!--<code class="b-code">   b-span_size_1 b-span_size_2 b-span_size_3      </code>-->
+        <!--</p>-->
+
+    <!--</div></section>-->
+
+    <!--<section class="b-slide slide"><div class="b-slide__in">-->
+        <!--<h2 class="b-slide__title">Больше типов. Общие модификаторы</h2>-->
+        <!--&lt;!&ndash;<h2>Общие модификации</h2>&ndash;&gt;-->
+        <!--<ul>-->
+            <!--<li><mark class="b-highlight b-highlight_type_neutral">type</mark> - ключевые свойства и особенности</li>-->
+            <!--<li><mark class="b-highlight b-highlight_type_neutral">layout</mark> - раскладка</li>-->
+            <!--<li><mark class="b-highlight b-highlight_type_neutral">viewtype</mark> - представление</li>-->
+            <!--<li><mark class="b-highlight b-highlight_type_neutral">viewtype-theme</mark> - тема/скин в пределах выбранного viewtype</li>-->
+            <!--<li><mark class="b-highlight b-highlight_type_neutral">content</mark> - содержимое</li>-->
+            <!--<li><mark class="b-highlight b-highlight_type_neutral">context</mark> - контекст</li>-->
+        <!--</ul>-->
+    <!--</div></section>-->
+
+    <!--<section class="b-slide slide"><div class="b-slide__in">-->
+        <!--<h2>Каскад модификаций</h2>-->
+        <!--<ul>-->
+            <!--<li><code>.b-menu__item</code></li>-->
+            <!--<li class="next"><code>.b-menu__item_state_selected</code></li>-->
+            <!--<li class="next"><code>.b-menu_type_meta. b-menu__item_state_selected</code></li>-->
+            <!--<li class="next"><code>.b-menu_layout_inline .b-menu__item_state_selected</code></li>-->
+            <!--<li class="next"><code>.b-menu_viewtype_ribbon .b-menu__item_state_selected</code></li>-->
+            <!--<li class="next"><code>.b-menu_content_products .b-menu__item_state_selected</code></li>-->
+        <!--</ul>-->
+    <!--</div></section>-->
+
+    <section class="b-slide slide"><div class="b-slide__in">
+        <h2>БЭМ-принципы</h2>
+
+        <ul>
+            <li>Нормализованные сущности</li>
+            <li>Модификации-предикаты</li>
+            <li>GRASP
+				<ul>
+					<li>Low Coupling - АНБ + !МБК</li>
+					<li>High Cohesion - декомпозиция блока вместо МБК</li>
+				</ul>
+			</li>
+        </ul>
+
+		<code>.b-menu__item .b-link</code> vs. <code>b-menu__item-text</code>
+    </div></section>
+
+    <section class="b-slide slide"><div class="b-slide__in">
+        <h2>Читать и смотреть</h2>
+
+
+        <ul>
+            <li><a href="http://ru.bem.info/" target="_blank">http://ru.bem.info/</a></li>
+            <li><a href="http://clubs.ya.ru/bem/" target="_blank">http://clubs.ya.ru/bem/</a></li>
+            <li><a href="http://clubs.ya.ru/bem/" target="_blank">https://github.com/bem/</a></li>
+        </ul>
+
+        <p><a href="https://twitter.com/bem_ru" target="_blank">@bem_ru</a> #BEM #БЭМ #b_
+        </p>
+
+        <p><a href="http://events.yandex.ru/events/yasubbotnik/" target="_blank">http://events.yandex.ru/events/yasubbotnik/</a></p>
+
+
+        <!--<br /><a href="https://www.facebook.com/groups/bem.info/" target="_blank">Facebook</a></p>-->
+
+
+
+    </div></section>
+
+    <section class="b-slide slide"><div class="b-slide__in">
+        <h2></h2>
+
+        <div class="b-person vcard">
+            <h3 class="b-person__name fn">
+                Василий Чернов
+            </h3>
+            <p class="b-person__career"><span class="b-person__position role">Ведущий верстальщик</span>,
+                <a class="b-person__company b-link org" href="http://softline.ru">Softline</a></p>
+                <p><a class="b-link" href="https://twitter.com/bivihoba">@bivihoba</a><br />
+                    <a rel="nofollow" class="b-person__email b-link email" href="mailto:bivihoba@ya.ru">bivihoba@ya.ru</a></p>
+        </div>
+
+        <p><small><a href="http://bivihoba.ru/slides/bem">bivihoba.ru/slides/bem</a></small></p>
+
+    </div></section>
+
+
+    <section class="b-slide slide"><div class="b-slide__in">
+        <h2>Бинго!</h2>
+        <img src="pictures/Facepalm-Picard.jpg" alt="" height="50%"/>
+        <p>БЭМ настолько же Bootstrap, как UML — Jquery UI.</p>
+
+        <!--<p>язык vs. библиотека</p>-->
+        <!--Feel the difference-->
+
+    </div></section>
+
+    <!--<section class="b-slide slide"><div class="b-slide__in">-->
+        <!--<h2>Images Copyright</h2>-->
+
+		<!--<p>-->
+			<!--<small>-->
+
+				<!--Cap Barbell-->
+				<!--06 http://www.gnc.com/product/index.jsp?productId=10823726-->
+				<!--07 http://www.megamusculo.com/material/bowflex-mancuernas-selecttech-552/prod_1303.html-->
+
+			<!--</small>-->
+
+		<!--</p>-->
+
+    <!--</div></section>-->
+
+	<div class="progress"><div class="b-slide__in"></div></div>
+	<script src="shower/shower.min.js"></script>
+	<!-- Copyright © 2010–2013 Vadim Makeev — pepelsbey.net -->
+
+
+	<!-- Yandex.Metrika -->
+	<script src="//mc.yandex.ru/resource/watch.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	try { var yaCounter184514 = new Ya.Metrika(184514); } catch(e){}
+	</script>
+	<noscript><div style="position: absolute;"><img src="//mc.yandex.ru/watch/184514" alt="" /></div></noscript>
+	<!-- Yandex.Metrika -->
+</body>
+</html>
