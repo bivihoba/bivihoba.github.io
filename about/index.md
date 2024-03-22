@@ -7,7 +7,7 @@ title: About Bivihoba
 
 <main role="main">
   <h1>Vasilii Chernov</h1>
-  <p>Frontend developer.</p>
+  <p>Senior/Lead Frontend Engineer.</p>
 
   <h2>Contact</h2>
   <p>
