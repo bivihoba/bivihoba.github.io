@@ -14,6 +14,6 @@ title: About Bivihoba
     <a href="https://twitter.com/bivihoba">Twitter</a>,
     <a href="https://github.com/bivihoba">Github</a>,
     <a href="https://codepen.io/bivihoba">Codepen</a>,
-    <a href="https://linkedin.com/in/bivihoba">LinkedIn</a>
+    <a href="https://linkedin.com/in/bivihoba">LinkedIn</a>.
   </p>
 </main>
