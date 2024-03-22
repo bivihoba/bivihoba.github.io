@@ -1,5 +1,5 @@
 safe: true
 encoding: utf-8
 timezone: Asia/Yekaterinburg
-gems:
+plugins:
   - jekyll-redirect-from
