@@ -17,9 +17,6 @@ title: About Bivihoba
     Social networks:
     <a href="https://twitter.com/bivihoba">Twitter</a>,
     <a href="https://github.com/bivihoba">Github</a>,
-    <a href="https://codepen.io/bivihoba">Codepen</a>,
-    <a href="https://www.facebook.com/vasilij.chernov">Facebook</a>,
-    <a href="http://bivihoba.moikrug.ru/">Мой круг</a>,
-    <a href="https://plus.google.com/114945349301885097093/">Google +</a>
+    <a href="https://codepen.io/bivihoba">Codepen</a>
   </p>
 </main>
